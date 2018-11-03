@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konnexions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="bootstrap/css/style.default.css" id="theme-stylesheet">
+
+    <style>
+        .myform{
+            opacity: 0.8;
+            border-radius: 47%;
+            border-style: inherit;
+            background-image: linear-gradient(-45deg,blue,red,black);
+            position: relative;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .95);
+            padding: 10px;
+        }
+        .myform:hover{
+            transform: scale(1.03);
+        }
+        h2{
+            margin-top: 2%;
+        }
+        .modal{
+            background-image: url('images/img2.jpg');
+            background-size: cover;
+            color:white;
+        }
+        .texts{
+            opacity: 1;
+        }
+        nav.navbar {
+                background-color: black;
+            }
+            
+            .img {
+                max-width: 50%;
+            }
+        .full{ 
+            height:300px; 
+            widows: 50%;
+        }
+        .btn{
+            font-size:25px;
+        }
+        .card-body{
+            color:black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 30px;
+        }
+        .card-img-top{
+            height:300px
+        }
+        body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: black;
+        }        
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .bgimg-1 {
+        background-image: url("images/img1.jpg");
+        min-height: 400;
+        }
+
+        .bgimg-2 {
+        background-image: url("images/img2.jpg");
+        min-height: 400px;
+        }
+
+        .bgimg-3 {
+        background-image: url("images/img3.jpg");
+        min-height: 400px;
+        }
+        section{
+            border-bottom-color: yellowgreen;
+            border-style: solid;
+            border-width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="bgimg-1 home">
+        <center>
+            <img src="images/background.png" class="col-lg-6 col-md-12 col-sm-12" style="height: 200px;padding-bottom: 20px;padding-top: 20px;width: 530px;">
+        </center>
+    </div>
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-responsive col-sm-12">
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i
+                    class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse" style="height: 55px;background-color: rgb(49, 51, 54)">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link link-scroll">HOME</a></li>
+                    <li class="nav-item"><a href="../Image Gallery/index.html" class="nav-link link-scroll">Image Gallery</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-scroll">Video Gallery</a></li>
+                    <li class="nav-item"><a href="../Tic Tac Toe/index.html" class="nav-link link-scroll">Tic-Tac-Toe</a></li>
+                    <li class="nav-item"><a href="../Click Counter/index.html" class="nav-link link-scroll">Click Counter</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link link-scroll">HTML </a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link link-scroll">CSS </a></li>
+                    <li class="nav-item"><a href="#text" class="nav-link link-scroll">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link link-scroll">PLAYLISTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-scroll" onclick="document.getElementById('id01').style.display='block';"
+                            style="width:auto;">SIGN UP</a></li>
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row main">
+                                <div class="main-login main-center" style="margin-top: 2.5%;margin-left: 50%;width:40%; height: 60%">
+                                    <form class="myform" method="post" action="#" style="padding-left: 13.5%;padding-right: 12%;padding-top: 5%;padding-bottom: 5%;"
+                                        onsubmit="return checkForm(this);">
+
+                                        <div class="form-group">
+
+                                            <center><label class="texts" for="name">
+                                                    <h1>Sign Up</h1>
+                                                </label></center>
+                                            <label class="texts" for="name">
+                                                <h4>Username</h4>
+                                            </label>
+                                            <div class="cols-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user fa"
+                                                            aria-hidden="true"></i></span>
+                                                    <input required="" type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Enter your Name" style="margin-left: 3%;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="texts" for="email">
+                                                <h4>Your Email</h4>
+                                            </label>
+                                            <div class="cols-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                                            aria-hidden="true"></i></span>
+                                                    <input required="" type="text" class="form-control" name="email" id="email"
+                                                        placeholder="Enter your Email" style="margin-left: 3%;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="texts" for="username">
+                                                <h4>Phone Number</h4>
+                                            </label>
+                                            <div class="cols-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-users fa"
+                                                            aria-hidden="true"></i></span>
+                                                    <input required="" type="tel" class="form-control" name="num" id="num"
+                                                        placeholder="Enter your Phone Number" style="margin-left: 3%;"
+                                                        pattern="^\d{10}$">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="texts" for="password">
+                                                <h4>Password</h4>
+                                            </label>
+                                            <div class="cols-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg"
+                                                            aria-hidden="true"></i></span>
+                                                    <input required="" type="password" class="form-control" name="password"
+                                                        id="password" placeholder="Enter your Password" style="margin-left: 3%;"
+                                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="texts" for="confirm">
+                                                <h4>Confirm Password</h4>
+                                            </label>
+                                            <div class="cols-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg"
+                                                            aria-hidden="true"></i></span>
+                                                    <input required="" type="password" class="form-control" name="confirm"
+                                                        id="confirm" placeholder="Confirm your Password" style="margin-left: 3%;"
+                                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <input required="" type="submit" name="submit" placeholder="Register" id="button"
+                                                class="btn btn-primary btn-lg btn-block login-button" style="margin-left: 17%;width: 260.675px;height: 47px;padding-right: 1%;padding-left: 1%;"
+                                                onclick="func()">
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+                        <script type="text/javascript">
+                            function func() {
+                                var username = document.getElementById("MyForm").elements.namedItem("name").value;
+                                var email = document.getElementById("MyForm").elements.namedItem("email").value;
+                                email = email.substring(0, email.indexOf('@'));
+                                var password = document.getElementById("MyForm").elements.namedItem("password").value;
+                                var cnf_password = document.getElementById("MyForm").elements.namedItem("confirm").value;
+                                if (password != cnf_password) {
+                                    alert("Confirm Password doesnot match !");
+                                    location.reload();
+                                }
+                                if ((username.length > 0) && (email.length > 0)) {
+                                    if (password.includes(username)) {
+                                        alert("Username cannot be in password");
+                                        location.reload();
+                                    }
+                                    if (password.includes(email)) {
+                                        alert("Email cannot be in password");
+                                        location.reload();
+                                    }
+                                }
+                            }
+                        </script>
+                    </div>
+
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--intro-->
+
+    <section id="intro" class="text bgimg-2" style="color:black;padding-top: 120px;padding-bottom: 500px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <center>
+                        <h3 class="heading" style="width:60%;background-color: slategray;">Welcome to Video Tutorials</h3>
+                        <p class="lead" style="color:white;">We provide the best Tutorials regarding languages.</p>
+                        <p style="color:white;">It can't be more easier than this to learn HTML, CSS and JavaScript,</p>
+                        <p style="color:white;">Never forget to make your feedbacks, it's what drives us closer to perfection</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- intro end-->
+    <!-- HTML-->
+
+    <section id="about" class="bgimg-3" style="padding-top: 150px;padding-bottom: 80px;">
+        <center>
+            <h3 class="heading" style="width:50%;color: black;background-color: slategray;">Welcome to HTML Video Tutorials</h3>
+        </center>
+        <div class="row">
+            <div class="row col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding-top: 60px;padding-bottom: 40px;padding-left: 50px;padding-right: 30px;margin-left: 0px;margin-right: 0px;">
+                <!---Image 1-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe class="odd card-img-top img-thumbnail" height="315px" src="https://www.youtube.com/embed/UB1O30fR-EE"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> HTML Tutorial 1 </h5>
+                    </center>
+                </div>
+                <!---Image 2-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe class="even card-img-top img-thumbnail width=" 560" height="315px" src="https://www.youtube.com/embed/hrZqiCUx6kg"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> HTML Tutorial 2 </h5>
+                    </center>
+                </div>
+                <!---Image 3-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe class="odd card-img-top img-thumbnail" height="315px" src="https://www.youtube.com/embed/KplMW80X60w"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> HTML Tutorial 3 </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML end-->
+    <!-- CSS-->
+
+    <section id="services" class="bgimg-1">
+        <center>
+            <h3 class="heading" style="width:50%;color: black;background-color: slategray;">Welcome to CSS Video Tutorials</h3>
+        </center>
+        <div class="row">
+            <div class="row col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding-top: 60px;padding-bottom: 40px;padding-left: 50px;padding-right: 30px;margin-left: 0px;margin-right: 0px;">
+                <!---Image 1-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> CSS Tutorial 1 </h5>
+                    </center>
+                </div>
+                <!---Image 2-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe height="315" src="https://www.youtube.com/embed/r1xBCi5SOjw" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> CSS Tutorial 2 </h5>
+                    </center>
+                </div>
+                <!---Image 3-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe height="315" src="https://www.youtube.com/embed/CUxH_rWSI1k" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> CSS Tutorial 3 </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CSS end-->
+
+    <!-- JAVASCRIPT-->
+    <section id="text" class="bgimg-2">
+        <center>
+            <h3 class="heading" style="width:60%;color: black;background-color: slategray;">Welcome to JAVASCRIPT Video Tutorials</h3>
+        </center>
+        <div class="row">
+            <div class="row col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding-top: 60px;padding-bottom: 40px;padding-left: 50px;padding-right: 30px;margin-left: 0px;margin-right: 0px;">
+                <!---Image 1-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;"><iframe
+                        height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> JAVASCRIPT Tutorial 1 </h5>
+                    </center>
+                </div>
+                <!---Image 2-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe height="315" src="https://www.youtube.com/embed/PwsigsH4oXw" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> JAVASCRIPT Tutorial 2 </h5>
+                    </center>
+                </div>
+                <!---Image 3-->
+                <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                    <iframe height="315" src="https://www.youtube.com/embed/fju9ii8YsGs" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                    <center>
+                        <h5 class="card-title"> JAVASCRIPT Tutorial 3 </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- text page end-->
+    <!-- playlists-->
+    <section id="contact" class="text-page bgimg-3">
+        <center>
+            <h3 class="heading" style="width:70%;color: black;background-color: slategray;">Welcome to PLAYLIST BASED Video Tutorials</h3>
+        </center>
+        <div class="row col-lg-12 col-sm-12 col-md-12 col-xs-12" style="padding-top: 60px;padding-bottom: 40px;padding-left: 50px;padding-right: 30px;margin-left: 0px;margin-right: 0px;">
+            <!---Image 1-->
+            <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                <iframe class="odd card-img-top img-thumbnail" height="315px" src="https://www.youtube.com/embed/playlist?list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <center>
+                    <h5 class="card-title"> HTML PLAYLIST </h5>
+                </center>
+            </div>
+            <!---Image 2-->
+            <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                <iframe class="even card-img-top img-thumbnail width=" 560" height="315px" src="https://www.youtube.com/embed/playlist?list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <center>
+                    <h5 class="card-title"> CSS PLAYLIST </h5>
+                </center>
+            </div>
+            <!---Image 3-->
+            <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
+                <iframe class="odd card-img-top img-thumbnail" height="315px" src="https://www.youtube.com/embed/playlist?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <center>
+                    <h5 class="card-title"> JAVASCRIPT PLAYLIST </h5>
+                </center>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer style="background-color: #111;">
+        <div class="container">
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-md-0 text-center text-md-left">&copy;2018 Video Tutorials</p>
+                    <p class="credit mb-md-0 text-center text-md-left">Abhinandan Purkait Creations</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="social"><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a><a
+                            href="https://www.twitter.com" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a><a
+                            href="https://plus.google.com/" target="_blank" class="gplus"><i class="fa fa-google-plus"></i></a><a
+                            href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a><a
+                            href="mailto:purkaitabhinandan@gmail.com" target="_blank" class="email"><i class="fa fa-envelope"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </script-->
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blackandwhite/2-0-0/js/front.js"></script>
+
+</html>
