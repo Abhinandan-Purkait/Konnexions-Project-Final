@@ -1,7 +1,14 @@
+
+{% url imagegallery_url_name as imagegallery %}
+{% url videogallery_url_name as videogallery %}
+{% url tictactoe_url_name as tictactoe %}
+{% url videogalleryform_url_name as videogalleryform %}
+{% url clickcounter_url_name as clickcounter %}
+
 <html>
 
 <head>
-    <title>Tic-Tac-Toe</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="script.js"></script>
@@ -291,11 +298,12 @@
 <body>
     <div class="topnav" id="myTopnav">
         <center style="float:right;">
-            <a href="index.html" class="active">Home</a>
-            <a href="Image Gallery/index.html">Image Gallery</a>
-            <a href="Video Gallery/index.html">Video Gallery</a>
-            <a href="Tic Tac Toe/index.html">Tic-Tac-Toe</a>
-            <a href="Click Counter/index.html">Click-Counter</a>
+            <a href="{% url 'home_url_name'  %}" class="active">Home</a>
+            <a href="imagegallery">Image Gallery</a>
+            <a href="videogalleryform">Validated Form</a>
+            <a href="videogallery">Video Gallery</a>
+            <a href="tictactoe">Tic-Tac-Toe</a>
+            <a href="clickcounter">Click-Counter</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>

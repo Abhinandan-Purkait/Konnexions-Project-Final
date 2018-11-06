@@ -1,5 +1,11 @@
 {% load static from staticfiles %}
 
+{% url imagegallery_url_name as imagegallery %}
+{% url videogallery_url_name as videogallery %}
+{% url tictactoe_url_name as tictactoe %}
+{% url videogalleryform_url_name as videogalleryform %}
+{% url clickcounter_url_name as clickcounter %}
+
 <!DOCTYPE html>
 <html>
 
@@ -112,11 +118,12 @@
                     class="fa fa-bars"></i></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse" style="height: 55px;background-color: rgb(49, 51, 54)">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="../index.html" class="nav-link link-scroll">HOME</a></li>
-                    <li class="nav-item"><a href="../Image Gallery/index.html" class="nav-link link-scroll">Image Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-scroll">Video Gallery</a></li>
-                    <li class="nav-item"><a href="../Tic Tac Toe/index.html" class="nav-link link-scroll">Tic-Tac-Toe</a></li>
-                    <li class="nav-item"><a href="../Click Counter/index.html" class="nav-link link-scroll">Click Counter</a></li>
+                    <li class="nav-item"><a href="{% url 'home_url_name'  %}" class="nav-link link-scroll">HOME</a></li>
+                    <li class="nav-item"><a href="{% url 'imagegallery_url_name'  %}" class="nav-link link-scroll">IMAGE GALLERY</a></li>
+                    <li class="nav-item"><a href="{% url 'videogalleryform_url_name'  %}" class="nav-link link-scroll">VALIDATED FORM</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-scroll">VIDEO GALLERY</a></li>
+                    <li class="nav-item"><a href="{% url 'tictactoe_url_name'  %}" class="nav-link link-scroll">TIC-TAC-TOE</a></li>
+                    <li class="nav-item"><a href="{% url 'clickcounter_url_name'  %}" class="nav-link link-scroll">CLICK COUNTER</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link link-scroll">HTML </a></li>
                     <li class="nav-item"><a href="#services" class="nav-link link-scroll">CSS </a></li>
                     <li class="nav-item"><a href="#text" class="nav-link link-scroll">JAVASCRIPT</a></li>

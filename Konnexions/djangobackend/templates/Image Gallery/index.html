@@ -223,11 +223,12 @@
 <body>
     <div class="topnav" id="myTopnav">
         <center style="float:right;">
-            <a href="../index.html" class="active">Home</a>
-            <a href="#">Image Gallery</a>
-            <a href="../Video Gallery/index.html">Video Gallery</a>
-            <a href="../Tic Tac Toe/index.html">Tic-Tac-Toe</a>
-            <a href="../Click Counter/index.html">Click-Counter</a>
+            <a href="{% url 'home_url_name'  %}" class="active">Home</a>
+            <a href="{% url 'imagegallery_url_name'  %}">Image Gallery</a>
+            <a href="{% url 'videogalleryform_url_name'  %}">Validated Form</a>
+            <a href="{% url 'videogallery_url_name'  %}">Video Gallery</a>
+            <a href="{% url 'tictactoe_url_name'  %}">Tic-Tac-Toe</a>
+            <a href="{% url 'clickcounter_url_name'  %}">Click-Counter</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -244,7 +245,8 @@
         <div class="row">
             <!---Image 1-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/1.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/1.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title"> Pride And Prejudice</h5>
                     <p class="card-text">Pride and Prejudice is an
@@ -260,7 +262,8 @@
             </div>
             <!---Image 2-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/2.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/2.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title"> 1984</h5>
                     <p class="card-text"><br><br>Nineteen Eighty-Four, often
@@ -276,7 +279,8 @@
             </div>
             <!---Image 3-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/3.jpg' %}"alt="Card image cap" style="padding: 0;">
+                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/3.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">The Alchemist</h5>
                     <p class="card-text">The Alchemist (Portuguese: O
@@ -292,7 +296,8 @@
             </div>
             <!---Image 4-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12 " style="width: 18rem;padding:2px;">
-                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/4.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/4.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">The Hunger Games</h5>
                     <p class="card-text">The Hunger Games is a
@@ -309,7 +314,8 @@
             </div>
             <!---Image 5-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/5.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/5.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">The Fifth Gospel</h5>
                     <p class="card-text">The Fifth Gospel (Das fünfte
@@ -324,7 +330,8 @@
             </div>
             <!---Image 6-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/6.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/6.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">A Game Of Thrones</h5>
                     <p class="card-text">A Game of Thrones is the
@@ -340,7 +347,8 @@
             </div>
             <!---Image 7-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/7.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="odd card-img-top img-thumbnail" src="{%static 'Image Gallery/images/7.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">A 1000 Splendid Suns</h5>
                     <p class="card-text">A Thousand Splendid Suns is
@@ -359,7 +367,8 @@
             </div>
             <!---Image 8-->
             <div class="full shadow-lg  mb-5 bg-black rounded card col-lg-3 col-md-6 col-sm-12 col-xs-12" style="width: 18rem;padding:2px;">
-                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/8.jpg' %}" alt="Card image cap" style="padding: 0;">
+                <img class="even card-img-top img-thumbnail" src="{%static 'Image Gallery/images/8.jpg' %}" alt="Card image cap"
+                    style="padding: 0;">
                 <div class="card-body">
                     <h5 class="card-title">The Ressurection</h5>
                     <p class="card-text">The Resurrectionist‘s

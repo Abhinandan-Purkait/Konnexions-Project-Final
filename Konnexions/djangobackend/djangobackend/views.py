@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def home(request):
+def homepage(request):
     return render(request,'index.html')
 
 def tictactoe(request):

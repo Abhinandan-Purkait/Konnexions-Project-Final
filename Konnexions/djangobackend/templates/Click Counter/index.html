@@ -308,11 +308,12 @@
 <body>
     <div class="topnav" id="myTopnav">
         <center style="float:right;">
-            <a href="../index.html" class="active">Home</a>
-            <a href="../Image Gallery/index.html">Image Gallery</a>
-            <a href="../Video Gallery/index.html">Video Gallery</a>
-            <a href="../Tic Tac Toe/index.html">Tic-Tac-Toe</a>
-            <a href="#">Click-Counter</a>
+                <a href="{% url 'home_url_name'  %}" class="active">Home</a>
+                <a href="{% url 'imagegallery_url_name'  %}">Image Gallery</a>
+                <a href="{% url 'videogalleryform_url_name'  %}">Validated Form</a>
+                <a href="{% url 'videogallery_url_name'  %}">Video Gallery</a>
+                <a href="{% url 'tictactoe_url_name'  %}">Tic-Tac-Toe</a>
+                <a href="{% url 'clickcounter_url_name'  %}">Click-Counter</a>    
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
